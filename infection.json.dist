@@ -1,0 +1,29 @@
+{
+    "timeout": 120,
+    "source": {
+        "directories": [
+            "src"
+        ]
+    },
+    "logs": {
+        "text": "infection-log.txt"
+    },
+    "mutators": {
+        "@default": true,
+        "Division": {
+            "ignore": [
+                "ReactInspector\\HttpMiddleware\\MiddlewareCollector::__invoke"
+            ]
+        },
+        "MethodCallRemoval": {
+            "ignore": [
+                "ReactInspector\\HttpMiddleware\\MiddlewareCollector::__invoke"
+            ]
+        },
+        "UnwrapStrToUpper": {
+            "ignore": [
+                "ReactInspector\\HttpMiddleware\\MiddlewareCollector::__invoke"
+            ]
+        }
+    }
+}

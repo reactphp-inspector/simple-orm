@@ -1,0 +1,46 @@
+{
+    "name": "react-inspector/simple-orm",
+    "description": "\ud83d\udca0 Measure SQL queries going through wyrihaximus/react-simple-orm",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cees-Jan Kiewiet",
+            "email": "ceesjank@gmail.com",
+            "homepage": "https://www.wyrihaximus.net/"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "marcocesarato/sqlparser": "^0.2.106",
+        "react/promise": "^2.7",
+        "wyrihaximus/metrics": "^1.0.2",
+        "wyrihaximus/react-simple-orm": "dev-master"
+    },
+    "require-dev": {
+        "wyrihaximus/async-test-utilities": "^3.2"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.7"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "ReactInspector\\SimpleOrm\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ReactInspector\\Tests\\SimpleOrm\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "composer normalize"
+        ],
+        "post-update-cmd": [
+            "composer normalize"
+        ]
+    }
+}
