@@ -10,14 +10,14 @@
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": "^8 || ^7.4",
         "marcocesarato/sqlparser": "^0.2.106",
         "react/promise": "^2.7",
         "wyrihaximus/metrics": "^1.0.2",
         "wyrihaximus/react-simple-orm": "dev-master"
     },
     "require-dev": {
-        "wyrihaximus/async-test-utilities": "^3.2 || ^4.0"
+        "wyrihaximus/async-test-utilities": "^4.0.2"
     },
     "config": {
         "platform": {
