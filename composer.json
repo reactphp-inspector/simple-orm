@@ -13,17 +13,11 @@
         "php": "^8 || ^7.4",
         "marcocesarato/sqlparser": "^0.2.106",
         "react/promise": "^2.7",
-        "wyrihaximus/metrics": "^1.0.2",
+        "wyrihaximus/metrics": "^2 || ^1.0.2",
         "wyrihaximus/react-simple-orm": "dev-master"
     },
     "require-dev": {
         "wyrihaximus/async-test-utilities": "^4.0.2"
-    },
-    "config": {
-        "platform": {
-            "php": "7.4.7"
-        },
-        "sort-packages": true
     },
     "autoload": {
         "psr-4": {
@@ -34,6 +28,18 @@
         "psr-4": {
             "ReactInspector\\Tests\\SimpleOrm\\": "tests/"
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "infection/extension-installer": true,
+            "ergebnis/composer-normalize": true,
+            "icanhazstring/composer-unused": true
+        },
+        "platform": {
+            "php": "7.4.7"
+        },
+        "sort-packages": true
     },
     "scripts": {
         "post-install-cmd": [
